@@ -10,3 +10,6 @@ compile2:
 run2: compile2
 	./part2
 
+clean: 
+	rm -f part1 part2
+
