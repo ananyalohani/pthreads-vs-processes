@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
    pid_t pid = fork();
    if(pid == 0)
    {
-      while(num != -90)
+      for(int i = 0; i < 100; i++)
       {
          num--;
       }
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
    else
    {
       wait(NULL);
-      while(num != 100)
+      for(int i = 0; i < 100; i++)
       {
          num++;
       }

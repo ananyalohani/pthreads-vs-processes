@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
    pthread_create(&tid, &attr, thread_decrement, NULL);
    pthread_join(tid, NULL);
 
-   while(num != 100)
+   for(int i = 0; i < 100; i++)
    {
       num++;
    }
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 void *thread_decrement()
 {
-   while(num != -90)
+   for(int i = 0; i < 100; i++)
    {
       num--;
    }
