@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
    pthread_create(&tid, &attr, thread_decrement, NULL);
    pthread_join(tid, NULL);
 
-   for(int i = 0; i < 100; i++)
+   for(int i = 0; i < 90; i++)
    {
       num++;
    }

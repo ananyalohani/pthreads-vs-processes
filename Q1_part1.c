@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
    else
    {
       wait(NULL);
-      for(int i = 0; i < 100; i++)
+      for(int i = 0; i < 90; i++)
       {
          num++;
       }
