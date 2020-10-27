@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
    pid_t pid = fork();
    if(pid == 0)
    {
-      for(int i = 0; i < 100; i++)
+      while(num != -90)
       {
          num--;
       }
@@ -21,11 +21,11 @@ int main(int argc, char *argv[])
    }
    else
    {
-      wait(NULL);
-      for(int i = 0; i < 90; i++)
+      while(num != 100)
       {
          num++;
       }
+      wait(NULL);
       printf("The value of num = %d in parent process.\n", num);
    }
    return 0;
